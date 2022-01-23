@@ -208,11 +208,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/hadivafaii/template"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/hadivafaii/MyProject"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/hadivafaii/template/issues/new?title=Issue%20on%20page%20%2Fnb/jan22/jan-23-2022.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/hadivafaii/MyProject/issues/new?title=Issue%20on%20page%20%2Fnb/jan22/jan-23-2022.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -233,7 +233,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/hadivafaii/template/master?urlpath=tree/docs/nb/jan22/jan-23-2022.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/hadivafaii/MyProject/master?urlpath=tree/docs/nb/jan22/jan-23-2022.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -428,13 +428,14 @@ git clone https://github.com/hadivafaii/jb-template.git
 <div class="highlight-Bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ~/.bashrc
 </pre></div>
 </div>
-<p>That’s it!  Now you can add new notebooks to the project and publish the updates to make them available online.  To do this, simply edit <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> and add the notebook name there.  Then run <code class="docutils literal notranslate"><span class="pre">jb_build</span></code> followed by <code class="docutils literal notranslate"><span class="pre">jb_push</span></code> to build and upload your book.</p>
+<p>That’s it!  Now you can add new notebooks to the project and publish the updates to make them available online.  To do this, simply edit <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> and add the notebook name there.  Then run <code class="docutils literal notranslate"><span class="pre">jb_build</span></code> followed by <code class="docutils literal notranslate"><span class="pre">jb_push</span></code> to build and upload your book.  After about 10-15 mins your book should be online at the url address set in <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>.</p>
 </div>
 <div class="section" id="uploading-files">
 <h2>Uploading files<a class="headerlink" href="#uploading-files" title="Permalink to this headline">¶</a></h2>
 <p>You might wonder why I have included a folder called <code class="docutils literal notranslate"><span class="pre">_extras</span></code> in the project.  This is to store small files such as PDFs or other figures that I want to import in my reports.  For example, I have uploaded a jpg image in <code class="docutils literal notranslate"><span class="pre">_extras</span></code> that I can import using some <code class="docutils literal notranslate"><span class="pre">HTML</span></code> code:</p>
 <br>
 <img src="../../_extras/neuron.jpg" title="This is a Neuron" alt="null" width="400"/>
+<br>
 <br>
 <p>You can embed other file formats such as videos, GIFs, HTML and so on.  It’s pretty awesome!</p>
 </div>
@@ -451,7 +452,7 @@ git clone https://github.com/hadivafaii/jb-template.git
 </pre></div>
 </div>
 <p>In the template, I have included another notebook called <code class="docutils literal notranslate"><span class="pre">_tag.ipynb</span></code> that you can use to hide code blocks.  To do this add a line <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">HIDE</span> <span class="pre">CODE</span></code> on top of the cell that you want to hide and run <code class="docutils literal notranslate"><span class="pre">_tag.ipynb</span></code>.</p>
-<p>For example, compare the two cells below.  One of them has the <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">HIDE</span> <span class="pre">CODE</span></code> tag.  As a result, when I publish the book online you will see a little plus button that you can clikc on to hide or show the code content of the hidden cell.</p>
+<p>For example, compare the two cells below.  One of them has the <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">HIDE</span> <span class="pre">CODE</span></code> tag.  As a result, when I publish the book online you will see a little plus button that says “Click to show”.  You can clikc on it reveal the code content of the hidden cell.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># HIDE CODE</span>
@@ -485,7 +486,7 @@ git clone https://github.com/hadivafaii/jb-template.git
 </div>
 <div class="section" id="enjoy">
 <h2>Enjoy!<a class="headerlink" href="#enjoy" title="Permalink to this headline">¶</a></h2>
-<p>Let me know if something didn’t work or you have any questions.</p>
+<p>Let me know if something doesn’t work or you have any questions.</p>
 </div>
 </div>
 
